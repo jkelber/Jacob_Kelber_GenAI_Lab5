@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <title>About the Project · Greenlight Recruit</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -13,14 +12,6 @@
       margin: 0;
       padding: 0;
     }
-
-    .shell {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px 80px;
-    }
-
-    a { color: inherit; text-decoration: none; }
 
     header {
       padding: 16px 20px;
@@ -32,6 +23,13 @@
     .back-link {
       font-size: 14px;
       color: #38bdf8;
+      text-decoration: none;
+    }
+
+    .shell {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
     }
 
     h1 {
@@ -73,158 +71,216 @@
       margin: 20px 0;
       color: #bbf7d0;
     }
+
+    /* Tournament section styling */
+    .section-kicker {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #9ca3af;
+      margin-bottom: 6px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      font-weight: 650;
+      margin-bottom: 10px;
+    }
+
+    .section-sub {
+      font-size: 14px;
+      color: #cbd5e1;
+      margin-bottom: 20px;
+    }
+
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .pillars {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .pillar {
+      background: radial-gradient(circle at top left, #111827, #020617);
+      border-radius: 18px;
+      padding: 16px;
+      border: 1px solid rgba(31,41,55,0.9);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.6);
+    }
+
+    .pillar-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #9ca3af;
+      margin-bottom: 6px;
+    }
+
+    .pillar-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .pillar-body {
+      font-size: 13px;
+      color: #cbd5e1;
+      margin-bottom: 10px;
+    }
+
+    .pillar-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: rgba(15,23,42,0.9);
+      border: 1px solid rgba(55,65,81,0.9);
+      font-size: 10px;
+      color: #9ca3af;
+    }
+
+    .tag-accent {
+      background: rgba(34,197,94,0.12);
+      border-color: rgba(34,197,94,0.5);
+      color: #bbf7d0;
+    }
   </style>
 </head>
 
 <body>
-  <header>
-    <a class="back-link" href="index.html">← Back to main site</a>
-  </header>
 
-  <div class="shell">
-    <h1>About the Project</h1>
-    <p>
-      Greenlight Recruit was created to solve a simple but persistent problem in college golf recruiting:
-      coaches spend far too much time jumping between AJGA, Junior Golf Scoreboard, WAGR, spreadsheets,
-      emails, and scattered notes. The information exists — but it’s fragmented, inconsistent, and slow
-      to work with during the busiest parts of the recruiting cycle.
-    </p>
+<header>
+  <a class="back-link" href="index.html">← Back to main site</a>
+</header>
 
-    <div class="highlight">
-      <strong>Our mission:</strong> Give college golf coaches a single, unified recruiting cockpit that
-      consolidates rankings, performance data, and evaluation tools into one clean, modern interface.
-    </div>
+<div class="shell">
 
-    <h2>Project Goals</h2>
-    <ul>
-      <li>Unify AJGA, Junior Golf Scoreboard, and WAGR data into a single, coach-friendly view.</li>
-      <li>Provide meaningful context behind scores — field strength, scoring trends, and event quality.</li>
-      <li>Give coaches tools they actually use: shortlists, notes, tags, and exportable reports.</li>
-      <li>Reduce time spent searching for information so coaches can focus on evaluating fit.</li>
-      <li>Offer juniors and parents clarity on how their data appears and how to keep it accurate.</li>
-    </ul>
+  <h1>About the Project</h1>
+  <p>
+    Greenlight Recruit was created to solve a simple but persistent problem in college golf recruiting:
+    coaches spend far too much time jumping between AJGA, Junior Golf Scoreboard, WAGR, spreadsheets,
+    emails, and scattered notes. The information exists — but it’s fragmented, inconsistent, and slow
+    to work with during the busiest parts of the recruiting cycle.
+  </p>
 
-    <h2>Why This Matters</h2>
-    <p>
-      College golf recruiting is increasingly competitive, and coaches are expected to evaluate more
-      players across more regions than ever before. Greenlight Recruit helps programs stay organized,
-      informed, and efficient — without adding complexity or noise.
-    </p>
-
-    <h2>Who This Is For</h2>
-    <ul>
-      <li><strong>College coaches</strong> who want a faster, clearer way to evaluate junior golfers.</li>
-      <li><strong>Junior golfers & parents</strong> who want transparency and accuracy in how their data is presented.</li>
-      <li><strong>Programs</strong> looking to modernize their recruiting workflow.</li>
-    </ul>
-
-    <p>
-      This project is still evolving, and new features will continue to be added as coaches provide
-      feedback and the junior golf landscape changes.
-    </p>
-<section id="upcoming-tournaments" style="margin-top: 60px;">
-  <div class="section-header">
-    <div>
-      <div class="section-kicker">Upcoming Events</div>
-      <h2 class="section-title">Next 30 Days of Elite Junior Golf</h2>
-      <p class="section-sub">
-        A curated snapshot of the most competitive junior tournaments happening over the next month — 
-        sourced from AJGA, Junior Golf Hub, and TJGT. Perfect for tracking rising talent and evaluating 
-        players against strong fields.
-      </p>
-    </div>
+  <div class="highlight">
+    <strong>Our mission:</strong> Give college golf coaches a single, unified recruiting cockpit that
+    consolidates rankings, performance data, and evaluation tools into one clean, modern interface.
   </div>
 
-  <div class="pillars" style="grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 20px;">
-    
-    <!-- Event 1 -->
-    <div class="pillar">
-      <div class="pillar-label">AJGA</div>
-      <div class="pillar-title">Butterfield Bermuda Junior Championship</div>
-      <p class="pillar-body">
-        February 12, 2026 · Bermuda  
-        A strong-field AJGA event attracting top-ranked juniors early in the season.
-      </p>
-      <div class="pillar-tags">
-        <span class="tag tag-accent">International</span>
-        <span class="tag">Strong Field</span>
+  <h2>Project Goals</h2>
+  <ul>
+    <li>Unify AJGA, Junior Golf Scoreboard, and WAGR data into a single, coach-friendly view.</li>
+    <li>Provide meaningful context behind scores — field strength, scoring trends, and event quality.</li>
+    <li>Give coaches tools they actually use: shortlists, notes, tags, and exportable reports.</li>
+    <li>Reduce time spent searching for information so coaches can focus on evaluating fit.</li>
+    <li>Offer juniors and parents clarity on how their data appears and how to keep it accurate.</li>
+  </ul>
+
+  <h2>Why This Matters</h2>
+  <p>
+    College golf recruiting is increasingly competitive, and coaches are expected to evaluate more
+    players across more regions than ever before. Greenlight Recruit helps programs stay organized,
+    informed, and efficient — without adding complexity or noise.
+  </p>
+
+  <h2>Who This Is For</h2>
+  <ul>
+    <li><strong>College coaches</strong> who want a faster, clearer way to evaluate junior golfers.</li>
+    <li><strong>Junior golfers & parents</strong> who want transparency and accuracy in how their data is presented.</li>
+    <li><strong>Programs</strong> looking to modernize their recruiting workflow.</li>
+  </ul>
+
+  <!-- ⭐ UPCOMING TOURNAMENTS SECTION ⭐ -->
+  <section id="upcoming-tournaments" style="margin-top: 60px;">
+    <div class="section-kicker">Upcoming Events</div>
+    <h2 class="section-title">Next 30 Days of Elite Junior Golf</h2>
+    <p class="section-sub">
+      A curated snapshot of the most competitive junior tournaments happening over the next month —
+      sourced from AJGA, Junior Golf Hub, and TJGT.
+    </p>
+
+    <div class="pillars">
+
+      <div class="pillar">
+        <div class="pillar-label">AJGA</div>
+        <div class="pillar-title">Butterfield Bermuda Junior Championship</div>
+        <p class="pillar-body">February 12, 2026 · Bermuda</p>
+        <div class="pillar-tags">
+          <span class="tag tag-accent">International</span>
+          <span class="tag">Strong Field</span>
+        </div>
       </div>
-    </div>
 
-    <!-- Event 2 -->
-    <div class="pillar">
-      <div class="pillar-label">AJGA</div>
-      <div class="pillar-title">Simplify Boys Championship</div>
-      <p class="pillar-body">
-        February 13–16, 2026 · The Woodlands, TX  
-        One of the premier early‑season boys’ events with deep fields and national visibility.
-      </p>
-      <div class="pillar-tags">
-        <span class="tag tag-accent">Texas</span>
-        <span class="tag">Elite Field</span>
+      <div class="pillar">
+        <div class="pillar-label">AJGA</div>
+        <div class="pillar-title">Simplify Boys Championship</div>
+        <p class="pillar-body">February 13–16, 2026 · The Woodlands, TX</p>
+        <div class="pillar-tags">
+          <span class="tag tag-accent">Texas</span>
+          <span class="tag">Elite Field</span>
+        </div>
       </div>
-    </div>
 
-    <!-- Event 3 -->
-    <div class="pillar">
-      <div class="pillar-label">AJGA</div>
-      <div class="pillar-title">Fortinet Stanford Invitational</div>
-      <p class="pillar-body">
-        February 13, 2026 · Stanford, CA  
-        A high‑profile West Coast event drawing top juniors preparing for spring schedules.
-      </p>
-      <div class="pillar-tags">
-        <span class="tag tag-accent">California</span>
-        <span class="tag">National</span>
+      <div class="pillar">
+        <div class="pillar-label">AJGA</div>
+        <div class="pillar-title">Fortinet Stanford Invitational</div>
+        <p class="pillar-body">February 13, 2026 · Stanford, CA</p>
+        <div class="pillar-tags">
+          <span class="tag tag-accent">California</span>
+          <span class="tag">National</span>
+        </div>
       </div>
-    </div>
 
-    <!-- Event 4 -->
-    <div class="pillar">
-      <div class="pillar-label">TJGT</div>
-      <div class="pillar-title">The Tradition Spring Invitational</div>
-      <p class="pillar-body">
-        February 28 – March 1, 2026 · Gladewater, TX  
-        A major TJGT Elite Series event with strong regional competition.
-      </p>
-      <div class="pillar-tags">
-        <span class="tag tag-accent">Texas</span>
-        <span class="tag">Elite Series</span>
+      <div class="pillar">
+        <div class="pillar-label">TJGT</div>
+        <div class="pillar-title">The Tradition Spring Invitational</div>
+        <p class="pillar-body">February 28 – March 1, 2026 · Gladewater, TX</p>
+        <div class="pillar-tags">
+          <span class="tag tag-accent">Texas</span>
+          <span class="tag">Elite Series</span>
+        </div>
       </div>
-    </div>
 
-    <!-- Event 5 -->
-    <div class="pillar">
-      <div class="pillar-label">TJGT</div>
-      <div class="pillar-title">Spring Break Cypresswood Showcase</div>
-      <p class="pillar-body">
-        March 10–11, 2026 · Spring, TX  
-        A key early‑March event recognized for competitive fields and strong scoring conditions.
-      </p>
-      <div class="pillar-tags">
-        <span class="tag tag-accent">Texas</span>
-        <span class="tag">Open Series</span>
+      <div class="pillar">
+        <div class="pillar-label">TJGT</div>
+        <div class="pillar-title">Spring Break Cypresswood Showcase</div>
+        <p class="pillar-body">March 10–11, 2026 · Spring, TX</p>
+        <div class="pillar-tags">
+          <span class="tag tag-accent">Texas</span>
+          <span class="tag">Open Series</span>
+        </div>
       </div>
-    </div>
 
-    <!-- Event 6 -->
-    <div class="pillar">
-      <div class="pillar-label">International</div>
-      <div class="pillar-title">GJG Portuguese Juniors International</div>
-      <p class="pillar-body">
-        February 13, 2026 · Portugal  
-        A major European junior event attracting top international WAGR‑tracked players.
-      </p>
-      <div class="pillar-tags">
-        <span class="tag tag-accent">Europe</span>
-        <span class="tag">WAGR</span>
+      <div class="pillar">
+        <div class="pillar-label">International</div>
+        <div class="pillar-title">GJG Portuguese Juniors International</div>
+        <p class="pillar-body">February 13, 2026 · Portugal</p>
+        <div class="pillar-tags">
+          <span class="tag tag-accent">Europe</span>
+          <span class="tag">WAGR</span>
+        </div>
       </div>
+
     </div>
+  </section>
 
-  </div>
-</section>
+</div>
 
-    
-  </div>
+<!-- Chatling Floating Chatbot -->
+<script>
+  window.chtlConfig = { chatbotId: "8354644678" }
+</script>
+<script async data-id="8354644678" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+
 </body>
 </html>
