@@ -10,7 +10,6 @@
       background: radial-gradient(circle at top, #0f172a 0, #020617 55%);
       color: #f9fafb;
       margin: 0;
-      padding: 0;
     }
 
     header {
@@ -26,15 +25,15 @@
       text-decoration: none;
     }
 
-    .shell {
+    main {
       max-width: 900px;
       margin: 0 auto;
-      padding: 40px 20px 80px;
+      padding: 40px 20px 60px;
     }
 
     h1 {
       font-size: 36px;
-      margin-top: 20px;
+      margin-top: 0;
       margin-bottom: 10px;
       font-weight: 700;
     }
@@ -72,7 +71,7 @@
       color: #bbf7d0;
     }
 
-    /* Tournament section styling */
+    /* Tournament section */
     .section-kicker {
       font-size: 11px;
       text-transform: uppercase;
@@ -153,115 +152,111 @@
       border-color: rgba(34,197,94,0.5);
       color: #bbf7d0;
     }
+
+    footer {
+      padding: 16px 20px;
+      text-align: center;
+      color: #9ca3af;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      background: rgba(2,6,23,0.9);
+    }
   </style>
 </head>
 
 <body>
+  <header>
+    <a class="back-link" href="index.html">← Back to main site</a>
+  </header>
 
-<div class="page">
-
-<header>
-  <a class="back-link" href="index.html">← Back to main site</a>
-</header>
-
-<main>
-<div class="shell">
-
-  <h1>About the Project</h1>
-  <p>
-    Greenlight Recruit was created to solve a simple but persistent problem in college golf recruiting:
-    coaches spend far too much time jumping between AJGA, Junior Golf Scoreboard, WAGR, spreadsheets,
-    emails, and scattered notes.
-  </p>
-
-  <div class="highlight">
-    <strong>Our mission:</strong> Give college golf coaches a single, unified recruiting cockpit that
-    consolidates rankings, performance data, and evaluation tools into one clean, modern interface.
-  </div>
-
-  <h2>Project Goals</h2>
-  <ul>
-    <li>Unify AJGA, Junior Golf Scoreboard, and WAGR data into a single, coach-friendly view.</li>
-    <li>Provide meaningful context behind scores — field strength, scoring trends, and event quality.</li>
-    <li>Give coaches tools they actually use: shortlists, notes, tags, and exportable reports.</li>
-    <li>Reduce time spent searching for information so coaches can focus on evaluating fit.</li>
-    <li>Offer juniors and parents clarity on how their data appears and how to keep it accurate.</li>
-  </ul>
-
-  <h2>Why This Matters</h2>
-  <p>
-    College golf recruiting is increasingly competitive, and coaches are expected to evaluate more
-    players across more regions than ever before.
-  </p>
-
-  <h2>Who This Is For</h2>
-  <ul>
-    <li><strong>College coaches</strong> who want a faster, clearer way to evaluate junior golfers.</li>
-    <li><strong>Junior golfers & parents</strong> who want transparency and accuracy.</li>
-    <li><strong>Programs</strong> looking to modernize their recruiting workflow.</li>
-  </ul>
-
-  <!-- ⭐ UPCOMING TOURNAMENTS SECTION ⭐ -->
-  <section id="upcoming-tournaments" style="margin-top: 60px;">
-    <div class="section-kicker">Upcoming Events</div>
-    <h2 class="section-title">Next 30 Days of Elite Junior Golf</h2>
-    <p class="section-sub">
-      A curated snapshot of the most competitive junior tournaments happening over the next month.
+  <main>
+    <h1>About the Project</h1>
+    <p>
+      Greenlight Recruit was created to solve a simple but persistent problem in college golf recruiting:
+      coaches spend far too much time jumping between AJGA, Junior Golf Scoreboard, WAGR, spreadsheets,
+      emails, and scattered notes.
     </p>
 
-    <div class="pillars">
-
-      <div class="pillar">
-        <div class="pillar-label">AJGA</div>
-        <div class="pillar-title">Butterfield Bermuda Junior Championship</div>
-        <p class="pillar-body">February 12, 2026 · Bermuda</p>
-        <div class="pillar-tags">
-          <span class="tag tag-accent">International</span>
-          <span class="tag">Strong Field</span>
-        </div>
-      </div>
-
-      <div class="pillar">
-        <div class="pillar-label">AJGA</div>
-        <div class="pillar-title">Simplify Boys Championship</div>
-        <p class="pillar-body">February 13–16, 2026 · The Woodlands, TX</p>
-        <div class="pillar-tags">
-          <span class="tag tag-accent">Texas</span>
-          <span class="tag">Elite Field</span>
-        </div>
-      </div>
-
-      <div class="pillar">
-        <div class="pillar-label">AJGA</div>
-        <div class="pillar-title">Fortinet Stanford Invitational</div>
-        <p class="pillar-body">February 13, 2026 · Stanford, CA</p>
-        <div class="pillar-tags">
-          <span class="tag tag-accent">California</span>
-          <span class="tag">National</span>
-        </div>
-      </div>
-
+    <div class="highlight">
+      <strong>Our mission:</strong> Give college golf coaches a single, unified recruiting cockpit that
+      consolidates rankings, performance data, and evaluation tools into one clean, modern interface.
     </div>
-  </section>
 
-</div>
-</main>
+    <h2>Project Goals</h2>
+    <ul>
+      <li>Unify AJGA, Junior Golf Scoreboard, and WAGR data into a single, coach-friendly view.</li>
+      <li>Provide meaningful context behind scores — field strength, scoring trends, and event quality.</li>
+      <li>Give coaches tools they actually use: shortlists, notes, tags, and exportable reports.</li>
+      <li>Reduce time spent searching for information so coaches can focus on evaluating fit.</li>
+      <li>Offer juniors and parents clarity on how their data appears and how to keep it accurate.</li>
+    </ul>
 
-<footer style="padding: 20px; text-align: center; color: #9ca3af;">
-  © <span id="year"></span> Greenlight Recruit
-</footer>
+    <h2>Why This Matters</h2>
+    <p>
+      College golf recruiting is increasingly competitive, and coaches are expected to evaluate more
+      players across more regions than ever before.
+    </p>
 
-</div>
+    <h2>Who This Is For</h2>
+    <ul>
+      <li><strong>College coaches</strong> who want a faster, clearer way to evaluate junior golfers.</li>
+      <li><strong>Junior golfers & parents</strong> who want transparency and accuracy.</li>
+      <li><strong>Programs</strong> looking to modernize their recruiting workflow.</li>
+    </ul>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+    <!-- ⭐ UPCOMING TOURNAMENTS SECTION (ABOVE FOOTER) ⭐ -->
+    <section id="upcoming-tournaments" style="margin-top: 60px;">
+      <div class="section-kicker">Upcoming Events</div>
+      <h2 class="section-title">Next 30 Days of Elite Junior Golf</h2>
+      <p class="section-sub">
+        A curated snapshot of the most competitive junior tournaments happening over the next month.
+      </p>
 
-<!-- Chatling Floating Chatbot -->
-<script>
-  window.chtlConfig = { chatbotId: "8354644678" }
-</script>
-<script async data-id="8354644678" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar-label">AJGA</div>
+          <div class="pillar-title">Butterfield Bermuda Junior Championship</div>
+          <p class="pillar-body">February 12, 2026 · Bermuda</p>
+          <div class="pillar-tags">
+            <span class="tag tag-accent">International</span>
+            <span class="tag">Strong Field</span>
+          </div>
+        </div>
 
+        <div class="pillar">
+          <div class="pillar-label">AJGA</div>
+          <div class="pillar-title">Simplify Boys Championship</div>
+          <p class="pillar-body">February 13–16, 2026 · The Woodlands, TX</p>
+          <div class="pillar-tags">
+            <span class="tag tag-accent">Texas</span>
+            <span class="tag">Elite Field</span>
+          </div>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-label">AJGA</div>
+          <div class="pillar-title">Fortinet Stanford Invitational</div>
+          <p class="pillar-body">February 13, 2026 · Stanford, CA</p>
+          <div class="pillar-tags">
+            <span class="tag tag-accent">California</span>
+            <span class="tag">National</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Greenlight Recruit
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Chatling Floating Chatbot -->
+  <script>
+    window.chtlConfig = { chatbotId: "8354644678" }
+  </script>
+  <script async data-id="8354644678" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
 </body>
 </html>
