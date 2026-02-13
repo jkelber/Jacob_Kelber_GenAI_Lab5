@@ -158,18 +158,20 @@
 
 <body>
 
+<div class="page">
+
 <header>
   <a class="back-link" href="index.html">← Back to main site</a>
 </header>
 
+<main>
 <div class="shell">
 
   <h1>About the Project</h1>
   <p>
     Greenlight Recruit was created to solve a simple but persistent problem in college golf recruiting:
     coaches spend far too much time jumping between AJGA, Junior Golf Scoreboard, WAGR, spreadsheets,
-    emails, and scattered notes. The information exists — but it’s fragmented, inconsistent, and slow
-    to work with during the busiest parts of the recruiting cycle.
+    emails, and scattered notes.
   </p>
 
   <div class="highlight">
@@ -189,14 +191,13 @@
   <h2>Why This Matters</h2>
   <p>
     College golf recruiting is increasingly competitive, and coaches are expected to evaluate more
-    players across more regions than ever before. Greenlight Recruit helps programs stay organized,
-    informed, and efficient — without adding complexity or noise.
+    players across more regions than ever before.
   </p>
 
   <h2>Who This Is For</h2>
   <ul>
     <li><strong>College coaches</strong> who want a faster, clearer way to evaluate junior golfers.</li>
-    <li><strong>Junior golfers & parents</strong> who want transparency and accuracy in how their data is presented.</li>
+    <li><strong>Junior golfers & parents</strong> who want transparency and accuracy.</li>
     <li><strong>Programs</strong> looking to modernize their recruiting workflow.</li>
   </ul>
 
@@ -205,8 +206,7 @@
     <div class="section-kicker">Upcoming Events</div>
     <h2 class="section-title">Next 30 Days of Elite Junior Golf</h2>
     <p class="section-sub">
-      A curated snapshot of the most competitive junior tournaments happening over the next month —
-      sourced from AJGA, Junior Golf Hub, and TJGT.
+      A curated snapshot of the most competitive junior tournaments happening over the next month.
     </p>
 
     <div class="pillars">
@@ -241,44 +241,27 @@
         </div>
       </div>
 
-      <div class="pillar">
-        <div class="pillar-label">TJGT</div>
-        <div class="pillar-title">The Tradition Spring Invitational</div>
-        <p class="pillar-body">February 28 – March 1, 2026 · Gladewater, TX</p>
-        <div class="pillar-tags">
-          <span class="tag tag-accent">Texas</span>
-          <span class="tag">Elite Series</span>
-        </div>
-      </div>
-
-      <div class="pillar">
-        <div class="pillar-label">TJGT</div>
-        <div class="pillar-title">Spring Break Cypresswood Showcase</div>
-        <p class="pillar-body">March 10–11, 2026 · Spring, TX</p>
-        <div class="pillar-tags">
-          <span class="tag tag-accent">Texas</span>
-          <span class="tag">Open Series</span>
-        </div>
-      </div>
-
-      <div class="pillar">
-        <div class="pillar-label">International</div>
-        <div class="pillar-title">GJG Portuguese Juniors International</div>
-        <p class="pillar-body">February 13, 2026 · Portugal</p>
-        <div class="pillar-tags">
-          <span class="tag tag-accent">Europe</span>
-          <span class="tag">WAGR</span>
-        </div>
-      </div>
-
     </div>
   </section>
 
 </div>
+</main>
+
+<footer style="padding: 20px; text-align: center; color: #9ca3af;">
+  © <span id="year"></span> Greenlight Recruit
+</footer>
+
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 <!-- Chatling Floating Chatbot -->
-  <script> window.chtlConfig = { chatbotId: "8354644678" } </script>
-  <script async data-id="8354644678" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+<script>
+  window.chtlConfig = { chatbotId: "8354644678" }
+</script>
+<script async data-id="8354644678" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
 
 </body>
 </html>
